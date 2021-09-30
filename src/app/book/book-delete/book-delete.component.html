@@ -1,0 +1,9 @@
+<div class="container">
+  <p>ID: {{book.id}}</p><br>
+  <p>Tiêu Đề: {{book.title}}</p><br>
+  <p>Tác Giả: {{book.author}}</p><br>
+  <p>Mô Tả: {{book.description}}</p>
+
+  <button (click)="delete()" class="btn btn-danger">Xóa</button>|
+  <button (click)="toList()" class="btn btn-primary">Không xóa</button>
+</div>
