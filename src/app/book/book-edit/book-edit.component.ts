@@ -42,7 +42,7 @@ export class BookEditComponent implements OnInit {
   onSubmit() {
     const {title, author, description} = this.bookForm.value;
     this.bookService.editBook(this.id, title, author, description).subscribe(() => {
-      this.message = 'Book Edited'
+      this.message = 'Đã Sửa'
     });
   }
 }

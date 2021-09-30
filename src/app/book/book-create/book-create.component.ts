@@ -26,7 +26,7 @@ export class BookCreateComponent implements OnInit {
   onSubmit(){
     const {title,author,description} = this.bookForm.value;
     this.bookService.createBook(title,author,description).subscribe(()=>{
-      this.message = 'Book created'
+      this.message = 'Đã tạo'
     });
   }
 }
